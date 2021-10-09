@@ -1,0 +1,85 @@
+:root{
+    --box-shadow:-2px 8px 41px -7px rgba(160,140,140,0.97);
+}
+
+body{
+    background: rgb(238, 235, 235);
+}
+
+.container{
+    display: grid;
+    grid-template-rows: auto;
+    margin: 10px;
+}
+@keyframes short-textbox {
+    from{
+        width: 100%;
+    }
+    to{
+        width: 16%;
+    }
+}
+.text-box-short{
+    box-shadow: var(--box-shadow);
+    height: 50px;
+    width: 15%;
+    background: bisque;
+    border-radius: 50px;
+    animation: short-textbox 1.5s cubic-bezier(0.44, 0.98, 1, 1); 
+    
+}
+.text-box{
+    box-shadow: var(--box-shadow);
+    height: 50px;
+    width: 15%;
+    background: bisque;
+    border-radius: 50px;
+}
+@keyframes large-textbox {
+    from{
+        width: 16%;
+    }
+    to{
+        width: 100%;
+    }
+}
+.text-box-large{
+    box-shadow: var(--box-shadow);
+    height: 50px;
+    background: bisque;
+    border-radius: 50px;
+    animation: large-textbox 1.5s cubic-bezier(0.44, 0.98, 1, 1);   
+}
+input[type='text']{
+    font-size: 24px;
+    outline: none;
+}
+
+.container-cards{
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    gap: 20px;
+    grid-auto-flow:dense;
+    
+    
+    
+
+
+}
+.note{
+    width: 250px;
+    height: auto;
+    border-radius: 0 0 5px 5px;
+    background: rgb(255, 255, 255);
+    box-shadow: var(--box-shadow);
+    padding: 15px;
+    display: inline-table;
+}
+.note >h3,h4,h2{
+    margin: 10px;
+}
+.p-text{
+    text-align: center;
+    font-size: 24px;
+}
