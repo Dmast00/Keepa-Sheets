@@ -57,9 +57,3 @@ function generateId(){
     return Math.floor(Math.random()*1000000);
 }
 
-// var largest = 0;
-
-// function fit(){
-//     notes = document.querySelector('#containercards');
-//     const divs = notes.childNodes;
-// }
